@@ -1,82 +1,106 @@
 :root {
   --oui-font-family: 'Manrope', sans-serif;
 
-  /* colors */
-  --oui-color-primary: 176 132 233;
-  --oui-color-primary-light: 213 190 244;
-  --oui-color-primary-darken: 137 76 209;
+  /* ============================================
+     PRIMARY / BRAND — Green (#22c993)
+     Source: Figma Design System / LOGO page
+  ============================================ */
+  --oui-color-primary: 34 201 147;          /* #22c993 */
+  --oui-color-primary-light: 0 227 170;     /* #00e3aa */
+  --oui-color-primary-darken: 15 177 118;   /* #0fb176 */
   --oui-color-primary-contrast: 255 255 255;
 
-  --oui-color-link: 189 107 237;
-  --oui-color-link-light: 217 152 250;
+  --oui-color-link: 34 201 147;             /* #22c993 */
+  --oui-color-link-light: 0 227 170;        /* #00e3aa */
 
   --oui-color-secondary: 255 255 255;
-  --oui-color-tertiary: 218 218 218;
-  --oui-color-quaternary: 218 218 218;
+  --oui-color-tertiary: 230 231 232;        /* #e6e7e8 */
+  --oui-color-quaternary: 148 154 157;      /* #949a9d */
 
-  --oui-color-danger: 245 97 139;
-  --oui-color-danger-light: 250 167 188;
-  --oui-color-danger-darken: 237 72 122;
+  /* ============================================
+     DANGER / LOSS — Red
+  ============================================ */
+  --oui-color-danger: 245 70 75;            /* #f5464b */
+  --oui-color-danger-light: 250 120 124;
+  --oui-color-danger-darken: 220 40 45;
   --oui-color-danger-contrast: 255 255 255;
 
-  --oui-color-success: 41 233 169;
-  --oui-color-success-light: 101 240 194;
-  --oui-color-success-darken: 0 161 120;
+  /* ============================================
+     SUCCESS / PROFIT — Green
+  ============================================ */
+  --oui-color-success: 34 201 147;          /* #22c993 */
+  --oui-color-success-light: 0 227 170;     /* #00e3aa */
+  --oui-color-success-darken: 15 177 118;   /* #0fb176 */
   --oui-color-success-contrast: 255 255 255;
 
+  /* ============================================
+     WARNING
+  ============================================ */
   --oui-color-warning: 255 209 70;
   --oui-color-warning-light: 255 229 133;
   --oui-color-warning-darken: 255 152 0;
   --oui-color-warning-contrast: 255 255 255;
 
-  --oui-color-fill: 36 32 47;
-  --oui-color-fill-active: 40 46 58;
+  /* ============================================
+     BACKGROUNDS — Dark Mode
+     Source: Figma Futures合约 Dark Mode
+  ============================================ */
+  --oui-color-fill: 35 36 37;               /* #232425 card/panel */
+  --oui-color-fill-active: 23 26 27;        /* #171a1b active panel */
 
-  --oui-color-base-1: 93 83 123;
-  --oui-color-base-2: 81 72 107;
-  --oui-color-base-3: 68 61 69;
-  --oui-color-base-4: 57 52 74;
-  --oui-color-base-5: 51 46 66;
-  --oui-color-base-6: 43 38 56;
-  --oui-color-base-7: 36 32 47;
-  --oui-color-base-8: 29 26 38;
-  --oui-color-base-9: 22 20 28;
-  --oui-color-base-10: 14 13 18;
+  /* Base scale — dark to darkest */
+  --oui-color-base-1: 60 64 66;            /* #3c4042 border/line */
+  --oui-color-base-2: 60 64 66;            /* #3c4042 */
+  --oui-color-base-3: 35 36 37;            /* #232425 card bg */
+  --oui-color-base-4: 35 36 37;            /* #232425 */
+  --oui-color-base-5: 23 26 27;            /* #171a1b secondary bg */
+  --oui-color-base-6: 23 26 27;            /* #171a1b */
+  --oui-color-base-7: 18 18 20;            /* #121214 main bg */
+  --oui-color-base-8: 18 18 20;            /* #121214 */
+  --oui-color-base-9: 9 9 9;              /* #090909 deepest bg */
+  --oui-color-base-10: 9 9 9;             /* #090909 */
 
   --oui-color-base-foreground: 255 255 255;
-  --oui-color-line: 255 255 255;
+  --oui-color-line: 60 64 66;              /* #3c4042 border */
 
-  --oui-color-trading-loss: 245 97 139;
+  /* ============================================
+     TRADING COLORS
+  ============================================ */
+  --oui-color-trading-loss: 245 70 75;      /* #f5464b */
   --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 41 233 169;
+  --oui-color-trading-profit: 34 201 147;   /* #22c993 */
   --oui-color-trading-profit-contrast: 255 255 255;
 
-  /* gradients */
-  --oui-gradient-primary-start: 40 0 97;
-  --oui-gradient-primary-end: 189 107 237;
+  /* ============================================
+     GRADIENTS
+  ============================================ */
+  --oui-gradient-primary-start: 9 9 9;       /* #090909 */
+  --oui-gradient-primary-end: 34 201 147;    /* #22c993 */
 
-  --oui-gradient-secondary-start: 81 42 121;
-  --oui-gradient-secondary-end: 176 132 233;
+  --oui-gradient-secondary-start: 15 177 118;  /* #0fb176 */
+  --oui-gradient-secondary-end: 34 201 147;    /* #22c993 */
 
-  --oui-gradient-success-start: 1 83 68;
-  --oui-gradient-success-end: 41 223 169;
+  --oui-gradient-success-start: 1 83 55;
+  --oui-gradient-success-end: 34 201 147;      /* #22c993 */
 
-  --oui-gradient-danger-start: 153 24 76;
-  --oui-gradient-danger-end: 245 97 139;
+  --oui-gradient-danger-start: 120 20 22;
+  --oui-gradient-danger-end: 245 70 75;        /* #f5464b */
 
-  --oui-gradient-brand-start: 231 219 249;
-  --oui-gradient-brand-end: 159 107 225;
+  --oui-gradient-brand-start: 0 227 170;       /* #00e3aa */
+  --oui-gradient-brand-end: 15 177 118;        /* #0fb176 */
   --oui-gradient-brand-stop-start: 6.62%;
   --oui-gradient-brand-stop-end: 86.5%;
-  --oui-gradient-brand-angle: 17.44deg;
+  --oui-gradient-brand-angle: 135deg;
 
   --oui-gradient-warning-start: 152 58 8;
   --oui-gradient-warning-end: 255 209 70;
 
-  --oui-gradient-neutral-start: 27 29 24;
-  --oui-gradient-neutral-end: 38 41 46;
+  --oui-gradient-neutral-start: 18 18 20;      /* #121214 */
+  --oui-gradient-neutral-end: 35 36 37;        /* #232425 */
 
-  /* rounded */
+  /* ============================================
+     BORDER RADIUS
+  ============================================ */
   --oui-rounded-sm: 2px;
   --oui-rounded: 4px;
   --oui-rounded-md: 6px;
@@ -85,7 +109,9 @@
   --oui-rounded-2xl: 16px;
   --oui-rounded-full: 9999px;
 
-  /* spacing */
+  /* ============================================
+     SPACING
+  ============================================ */
   --oui-spacing-xs: 20rem;
   --oui-spacing-sm: 22.5rem;
   --oui-spacing-md: 26.25rem;

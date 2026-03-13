@@ -31,7 +31,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_SEO_SITE_LANGUAGE": "en",
   "VITE_SEO_SITE_LOCALE": "en_US",
   "VITE_SEO_TWITTER_HANDLE": "",
-  "VITE_SEO_THEME_COLOR": "#000000",
+  "VITE_SEO_THEME_COLOR": "#22c993",
   "VITE_SEO_KEYWORDS": "vanta, dex, perpetual futures, orderly network, decentralized exchange",
   "VITE_AVAILABLE_LANGUAGES": "en,zh,ja,es,ko,vi,de,fr,it,tr,id,ru,pt,uk,pl,nl,tc",
   "VITE_USE_CUSTOM_PNL_POSTERS": "true",
