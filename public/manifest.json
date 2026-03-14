@@ -1,0 +1,54 @@
+{
+  "name": "Orderly DEX",
+  "short_name": "Orderly DEX",
+  "description": "A powerful perpetual trading DEX powered by Orderly Network",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#121214",
+  "theme_color": "#22c993",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/favicon.webp",
+      "sizes": "200x200",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "finance",
+    "business"
+  ],
+  "shortcuts": [
+    {
+      "name": "Trading",
+      "short_name": "Trade",
+      "description": "Start trading perpetuals",
+      "url": "/perp",
+      "icons": [
+        {
+          "src": "/favicon.webp",
+          "sizes": "200x200",
+          "type": "image/webp"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "short_name": "Portfolio",
+      "description": "View your portfolio",
+      "url": "/portfolio",
+      "icons": [
+        {
+          "src": "/favicon.webp",
+          "sizes": "200x200",
+          "type": "image/webp"
+        }
+      ]
+    }
+  ],
+  "screenshots": [],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
