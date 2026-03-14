@@ -29,6 +29,7 @@ import {
 } from "./runtime-config";
 import { Link } from "react-router-dom";
 import CustomLeftNav from "@/components/CustomLeftNav";
+import AINavButton from "@/components/AINavButton";
 
 interface MainNavItem {
   name: string;
@@ -354,6 +355,7 @@ export const useOrderlyConfig = () => {
             {components.subAccount}
             {components.chainMenu}
             {components.walletConnect}
+            <AINavButton />
           </Flex>
         </Flex>
       );

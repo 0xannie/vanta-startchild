@@ -1,7 +1,7 @@
 {
-  "name": "Orderly DEX",
-  "short_name": "Orderly DEX",
-  "description": "A powerful perpetual trading DEX powered by Orderly Network",
+  "name": "Vanta",
+  "short_name": "Vanta",
+  "description": "Trade perpetual futures on Vanta — powered by Orderly Network",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
