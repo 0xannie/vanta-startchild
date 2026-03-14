@@ -102,9 +102,23 @@ const getCustomMenuItems = (): MainNavItem[] => {
   }
 
   try {
-    // Parse delimiter-separated menu items
-    // Expected format: "Documentation,https://docs.example.com;Blog,https://blog.example.com;Support,https://support.example.com"
-    const menuPairs = customMenusEnv
+    // Support both JSON array format and delimiter-separated format
+    // JSON format: [{"name":"AI","href":"https://...","target":"_blank"}]
+    // Delimiter format: "Name,https://url;Name2,https://url2"
+    const trimmed = customMenusEnv.trim();
+    
+    if (trimmed.startsWith("[")) {
+      // JSON array format
+      const parsed = JSON.parse(trimmed) as Array<{name: string; href: string; target?: string}>;
+      return parsed.filter(item => item.name && item.href).map(item => ({
+        name: item.name,
+        href: item.href,
+        target: item.target || "_blank",
+      }));
+    }
+
+    // Delimiter-separated format
+    const menuPairs = trimmed
       .split(";")
       .map((pair) => pair.trim())
       .filter((pair) => pair.length > 0);
