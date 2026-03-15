@@ -1,106 +1,98 @@
 :root {
   --oui-font-family: 'Manrope', sans-serif;
 
-  /* ============================================
-     PRIMARY / BRAND — Green (#22c993)
-     Source: Figma Design System / LOGO page
-  ============================================ */
-  --oui-color-primary: 34 201 147;          /* #22c993 */
-  --oui-color-primary-light: 0 227 170;     /* #00e3aa */
-  --oui-color-primary-darken: 15 177 118;   /* #0fb176 */
+  /* ===== Vanta Design System - Colors extracted from Figma ===== */
+
+  /* Primary - Purple (#9444FC) */
+  --oui-color-primary: 148 68 252;
+  --oui-color-primary-light: 176 120 252;
+  --oui-color-primary-darken: 120 40 220;
   --oui-color-primary-contrast: 255 255 255;
 
-  --oui-color-link: 34 201 147;             /* #22c993 */
-  --oui-color-link-light: 0 227 170;        /* #00e3aa */
+  /* Links */
+  --oui-color-link: 148 68 252;
+  --oui-color-link-light: 176 120 252;
 
+  /* Text hierarchy */
   --oui-color-secondary: 255 255 255;
-  --oui-color-tertiary: 230 231 232;        /* #e6e7e8 */
-  --oui-color-quaternary: 148 154 157;      /* #949a9d */
+  --oui-color-tertiary: 160 160 170;
+  --oui-color-quaternary: 100 100 110;
 
-  /* ============================================
-     DANGER / LOSS — Red
-  ============================================ */
-  --oui-color-danger: 245 70 75;            /* #f5464b */
-  --oui-color-danger-light: 250 120 124;
-  --oui-color-danger-darken: 220 40 45;
+  /* Danger / Short - Red (#F44448) */
+  --oui-color-danger: 244 68 72;
+  --oui-color-danger-light: 248 140 142;
+  --oui-color-danger-darken: 220 40 44;
   --oui-color-danger-contrast: 255 255 255;
 
-  /* ============================================
-     SUCCESS / PROFIT — Green
-  ============================================ */
-  --oui-color-success: 34 201 147;          /* #22c993 */
-  --oui-color-success-light: 0 227 170;     /* #00e3aa */
-  --oui-color-success-darken: 15 177 118;   /* #0fb176 */
+  /* Success / Long - Green (#0CB074) */
+  --oui-color-success: 12 176 116;
+  --oui-color-success-light: 80 210 160;
+  --oui-color-success-darken: 0 140 90;
   --oui-color-success-contrast: 255 255 255;
 
-  /* ============================================
-     WARNING
-  ============================================ */
-  --oui-color-warning: 255 209 70;
-  --oui-color-warning-light: 255 229 133;
-  --oui-color-warning-darken: 255 152 0;
+  /* Warning */
+  --oui-color-warning: 255 200 60;
+  --oui-color-warning-light: 255 220 120;
+  --oui-color-warning-darken: 230 160 0;
   --oui-color-warning-contrast: 255 255 255;
 
-  /* ============================================
-     BACKGROUNDS — Dark Mode
-     Source: Figma Futures合约 Dark Mode
-  ============================================ */
-  --oui-color-fill: 35 36 37;               /* #232425 card/panel */
-  --oui-color-fill-active: 23 26 27;        /* #171a1b active panel */
+  /* Fill - Deep dark surfaces */
+  --oui-color-fill: 20 20 24;
+  --oui-color-fill-active: 30 30 36;
 
-  /* Base scale — dark to darkest */
-  --oui-color-base-1: 60 64 66;            /* #3c4042 border/line */
-  --oui-color-base-2: 60 64 66;            /* #3c4042 */
-  --oui-color-base-3: 35 36 37;            /* #232425 card bg */
-  --oui-color-base-4: 35 36 37;            /* #232425 */
-  --oui-color-base-5: 23 26 27;            /* #171a1b secondary bg */
-  --oui-color-base-6: 23 26 27;            /* #171a1b */
-  --oui-color-base-7: 18 18 20;            /* #121214 main bg */
-  --oui-color-base-8: 18 18 20;            /* #121214 */
-  --oui-color-base-9: 9 9 9;              /* #090909 deepest bg */
-  --oui-color-base-10: 9 9 9;             /* #090909 */
+  /* Base color scale - Vanta dark neutral palette
+     From lightest (base-1) to darkest (base-10) */
+  --oui-color-base-1: 100 100 110;
+  --oui-color-base-2: 80 80 90;
+  --oui-color-base-3: 60 60 68;
+  --oui-color-base-4: 45 45 52;
+  --oui-color-base-5: 38 38 44;
+  --oui-color-base-6: 30 30 36;
+  --oui-color-base-7: 24 24 28;
+  --oui-color-base-8: 18 18 22;
+  --oui-color-base-9: 14 14 16;
+  --oui-color-base-10: 10 10 12;
 
   --oui-color-base-foreground: 255 255 255;
-  --oui-color-line: 60 64 66;              /* #3c4042 border */
+  --oui-color-line: 255 255 255;
 
-  /* ============================================
-     TRADING COLORS
-  ============================================ */
-  --oui-color-trading-loss: 245 70 75;      /* #f5464b */
+  /* Trading colors */
+  --oui-color-trading-loss: 244 68 72;
   --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 34 201 147;   /* #22c993 */
+  --oui-color-trading-profit: 12 176 116;
   --oui-color-trading-profit-contrast: 255 255 255;
 
-  /* ============================================
-     GRADIENTS
-  ============================================ */
-  --oui-gradient-primary-start: 9 9 9;       /* #090909 */
-  --oui-gradient-primary-end: 34 201 147;    /* #22c993 */
+  /* Gradients - Purple primary */
+  --oui-gradient-primary-start: 80 20 180;
+  --oui-gradient-primary-end: 148 68 252;
 
-  --oui-gradient-secondary-start: 15 177 118;  /* #0fb176 */
-  --oui-gradient-secondary-end: 34 201 147;    /* #22c993 */
+  --oui-gradient-secondary-start: 60 30 120;
+  --oui-gradient-secondary-end: 148 68 252;
 
-  --oui-gradient-success-start: 1 83 55;
-  --oui-gradient-success-end: 34 201 147;      /* #22c993 */
+  /* Success gradient */
+  --oui-gradient-success-start: 0 60 40;
+  --oui-gradient-success-end: 12 176 116;
 
-  --oui-gradient-danger-start: 120 20 22;
-  --oui-gradient-danger-end: 245 70 75;        /* #f5464b */
+  /* Danger gradient */
+  --oui-gradient-danger-start: 120 20 24;
+  --oui-gradient-danger-end: 244 68 72;
 
-  --oui-gradient-brand-start: 0 227 170;       /* #00e3aa */
-  --oui-gradient-brand-end: 15 177 118;        /* #0fb176 */
-  --oui-gradient-brand-stop-start: 6.62%;
-  --oui-gradient-brand-stop-end: 86.5%;
+  /* Brand gradient */
+  --oui-gradient-brand-start: 200 180 252;
+  --oui-gradient-brand-end: 148 68 252;
+  --oui-gradient-brand-stop-start: 0%;
+  --oui-gradient-brand-stop-end: 100%;
   --oui-gradient-brand-angle: 135deg;
 
-  --oui-gradient-warning-start: 152 58 8;
-  --oui-gradient-warning-end: 255 209 70;
+  /* Warning gradient */
+  --oui-gradient-warning-start: 140 60 0;
+  --oui-gradient-warning-end: 255 200 60;
 
-  --oui-gradient-neutral-start: 18 18 20;      /* #121214 */
-  --oui-gradient-neutral-end: 35 36 37;        /* #232425 */
+  /* Neutral gradient */
+  --oui-gradient-neutral-start: 14 14 16;
+  --oui-gradient-neutral-end: 24 24 28;
 
-  /* ============================================
-     BORDER RADIUS
-  ============================================ */
+  /* ===== Border Radius ===== */
   --oui-rounded-sm: 2px;
   --oui-rounded: 4px;
   --oui-rounded-md: 6px;
@@ -109,9 +101,7 @@
   --oui-rounded-2xl: 16px;
   --oui-rounded-full: 9999px;
 
-  /* ============================================
-     SPACING
-  ============================================ */
+  /* ===== Spacing ===== */
   --oui-spacing-xs: 20rem;
   --oui-spacing-sm: 22.5rem;
   --oui-spacing-md: 26.25rem;
