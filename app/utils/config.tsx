@@ -366,6 +366,7 @@ export const useOrderlyConfig = () => {
         mainNavProps,
         bottomNavProps: {
           mainMenus: bottomNavMenus,
+          trailing: <AINavButton />,
         },
         footerProps: {
           telegramUrl: getRuntimeConfig("VITE_TELEGRAM_URL") || undefined,

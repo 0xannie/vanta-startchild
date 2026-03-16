@@ -24,7 +24,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_ENABLE_CAMPAIGNS": "false",
   "VITE_TELEGRAM_URL": "",
   "VITE_DISCORD_URL": "",
-  "VITE_TWITTER_URL": "https://x.com/0xannie_",
+  "VITE_TWITTER_URL": "https://x.com/Vanta_exchange",
   "VITE_SEO_SITE_NAME": "Vanta",
   "VITE_SEO_SITE_DESCRIPTION": "Trade perpetual futures on Vanta — powered by Orderly Network",
   "VITE_SEO_SITE_URL": "https://vanta.exchange",
