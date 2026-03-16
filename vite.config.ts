@@ -57,9 +57,18 @@ export default defineConfig(() => {
     ],
     build: {
       outDir: "build/client",
+      chunkSizeWarningLimit: 1000,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            vendor: ["react", "react-dom", "react-router-dom"],
+          },
+        },
+      },
     },
     optimizeDeps: {
       include: ["react", "react-dom", "react-router-dom"],
     },
   };
 });
+
