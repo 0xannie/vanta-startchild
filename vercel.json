@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm build",
+  "buildCommand": "NODE_OPTIONS='--max-old-space-size=3072' pnpm build",
   "outputDirectory": "build/client",
   "framework": null,
   "rewrites": [

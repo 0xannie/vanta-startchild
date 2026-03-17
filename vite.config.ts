@@ -57,11 +57,28 @@ export default defineConfig(() => {
     ],
     build: {
       outDir: "build/client",
-      chunkSizeWarningLimit: 1000,
+      chunkSizeWarningLimit: 2000,
+      sourcemap: false,
+      minify: "esbuild",
       rollupOptions: {
+        maxParallelFileOps: 2,
         output: {
-          manualChunks: {
-            vendor: ["react", "react-dom", "react-router-dom"],
+          manualChunks(id) {
+            if (id.includes("node_modules/react") || id.includes("node_modules/react-dom") || id.includes("node_modules/react-router")) {
+              return "vendor-react";
+            }
+            if (id.includes("node_modules/@orderly")) {
+              return "vendor-orderly";
+            }
+            if (id.includes("node_modules/@solana") || id.includes("node_modules/@coral-xyz")) {
+              return "vendor-solana";
+            }
+            if (id.includes("node_modules/@privy-io") || id.includes("node_modules/wagmi") || id.includes("node_modules/viem")) {
+              return "vendor-wallet";
+            }
+            if (id.includes("node_modules/")) {
+              return "vendor-misc";
+            }
           },
         },
       },
