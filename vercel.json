@@ -1,8 +1,8 @@
 {
-  "buildCommand": "NODE_OPTIONS='--max-old-space-size=3072' pnpm build",
+  "buildCommand": "NODE_OPTIONS='--max-old-space-size=3072' npm run build",
   "outputDirectory": "build/client",
   "framework": null,
-  "installCommand": "pnpm install --no-frozen-lockfile",
+  "installCommand": "npm install --legacy-peer-deps",
   "rewrites": [
     {
       "source": "/(.*)",
