@@ -35,7 +35,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_SEO_KEYWORDS": "vanta,dex,perpetual,futures,trading,orderly,defi",
   "VITE_AVAILABLE_LANGUAGES": "en,zh,ja,es,ko,vi,de,fr,it,tr,id,ru,pt,uk,pl,nl,tc",
   "VITE_USE_CUSTOM_PNL_POSTERS": "true",
-  "VITE_CUSTOM_PNL_POSTER_COUNT": "2",
+  "VITE_CUSTOM_PNL_POSTER_COUNT": "3",
   "VITE_TRADING_VIEW_COLOR_CONFIG": "",
   "VITE_ANALYTICS_SCRIPT": "",
   "VITE_SYMBOL_LIST": "",
