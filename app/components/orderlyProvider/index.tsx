@@ -7,7 +7,6 @@ import { withBasePath } from "@/utils/base-path";
 import { getSEOConfig, getUserLanguage } from "@/utils/seo";
 import { getRuntimeConfigBoolean, getRuntimeConfigArray, getRuntimeConfig } from "@/utils/runtime-config";
 import { createSymbolDataAdapter } from "@/utils/symbol-filter";
-import { DemoGraduationChecker } from "@/components/DemoGraduationChecker";
 import { LoadingSpinner } from "@/components/LoadingSpinner";
 import ServiceDisclaimerDialog from "./ServiceDisclaimerDialog";
 
@@ -171,7 +170,6 @@ const OrderlyProvider = (props: { children: ReactNode }) => {
 				customRestrictedRegions: getRuntimeConfigArray('VITE_RESTRICTED_REGIONS'),
 			}}
 		>
-			<DemoGraduationChecker />
 			<ServiceDisclaimerDialog />
 			{props.children}
 		</OrderlyAppProvider>
