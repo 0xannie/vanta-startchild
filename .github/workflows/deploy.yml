@@ -19,23 +19,29 @@ jobs:
         with:
           node-version: '20'
 
-      - uses: pnpm/action-setup@v3
-        with:
-          version: 9
+      # Setup swap to extend available memory (~10GB total)
+      - name: Setup swap space
+        run: |
+          sudo swapoff -a
+          sudo fallocate -l 8G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          free -h
+
+      - name: Install yarn
+        run: npm install -g yarn
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: yarn install --ignore-engines --frozen-lockfile
 
       - name: Build
-        run: pnpm build
+        run: yarn build
         env:
-          NODE_OPTIONS: '--max-old-space-size=7168'
+          NODE_OPTIONS: '--max-old-space-size=6144'
 
       - name: Install Vercel CLI
         run: npm install -g vercel@latest
-
-      - name: Pull Vercel settings
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Deploy prebuilt to Vercel
         run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
