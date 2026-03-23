@@ -65,7 +65,7 @@ export default defineConfig(() => {
         maxParallelFileOps: 2,
         output: {
           manualChunks(id) {
-            if (id.includes("node_modules/react") || id.includes("node_modules/react-dom") || id.includes("node_modules/react-router")) {
+            if (id.includes("/react/") || id.includes("/react-dom/") || id.includes("/react-router") || id.includes("/scheduler/")) {
               return "vendor-react";
             }
             if (id.includes("node_modules/@orderly")) {
@@ -83,6 +83,9 @@ export default defineConfig(() => {
           },
         },
       },
+    },
+    resolve: {
+      dedupe: ["react", "react-dom", "scheduler"],
     },
     optimizeDeps: {
       include: ["react", "react-dom", "react-router-dom"],
