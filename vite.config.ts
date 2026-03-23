@@ -65,20 +65,13 @@ export default defineConfig(() => {
         maxParallelFileOps: 2,
         output: {
           manualChunks(id) {
-            if (id.includes("/react/") || id.includes("/react-dom/") || id.includes("/react-router") || id.includes("/scheduler/")) {
-              return "vendor-react";
-            }
-            if (id.includes("node_modules/@orderly")) {
-              return "vendor-orderly";
-            }
+            // Only split out the largest/most isolated vendors
+            // Avoid circular deps by not over-splitting
             if (id.includes("node_modules/@solana") || id.includes("node_modules/@coral-xyz")) {
               return "vendor-solana";
             }
             if (id.includes("node_modules/@privy-io") || id.includes("node_modules/wagmi") || id.includes("node_modules/viem")) {
               return "vendor-wallet";
-            }
-            if (id.includes("node_modules/")) {
-              return "vendor-misc";
             }
           },
         },
